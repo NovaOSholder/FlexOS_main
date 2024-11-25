@@ -5,79 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexOS - Cloud-Based Operating System</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
+            background: linear-gradient(to bottom, #f4f9ff, #e8f0fd);
+            overflow-x: hidden;
         }
 
+        /* Header Styles */
         header {
-            background-color: #34495e;
-            color: white;
+            background: linear-gradient(135deg, #4c5df8, #6c83ff);
+            color: #fff;
             text-align: center;
-            padding: 40px 0;
+            padding: 80px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            position: relative;
         }
 
         header h1 {
+            font-size: 3.5em;
             margin: 0;
-            font-size: 3em;
+            animation: fadeIn 2s;
         }
 
+        header p {
+            font-size: 1.5em;
+            margin-top: 15px;
+            animation: fadeIn 3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
         section {
-            padding: 40px;
+            padding: 60px 20px;
             max-width: 1200px;
             margin: auto;
+            text-align: center;
         }
 
+        section h2 {
+            font-size: 2.5em;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* Features Styles */
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
         .feature {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
         }
 
         .feature h3 {
-            color: #34495e;
+            font-size: 1.8em;
+            color: #4c5df8;
+            margin-bottom: 15px;
         }
 
+        .feature p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Call-to-Action Button */
         .cta {
-            text-align: center;
             margin-top: 50px;
         }
 
         .button {
-            background-color: #2980b9;
+            background: linear-gradient(135deg, #6c83ff, #4c5df8);
             color: white;
             font-size: 1.2em;
-            padding: 15px 30px;
+            padding: 15px 40px;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
             text-transform: uppercase;
             text-decoration: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.3s ease;
         }
 
         .button:hover {
-            background-color: #3498db;
+            background: linear-gradient(135deg, #4c5df8, #6c83ff);
+            transform: scale(1.1);
         }
 
+        /* Footer Styles */
         footer {
             background-color: #34495e;
             color: white;
             text-align: center;
             padding: 20px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
@@ -85,25 +155,25 @@
 
     <header>
         <h1>FlexOS - Cloud-Based Operating System</h1>
-        <p>Introducing FlexOS: A fast, secure, and flexible cloud-based experience!</p>
+        <p>Experience the next-generation cloud-powered operating system today!</p>
     </header>
 
     <section>
         <h2>About FlexOS</h2>
-        <p>FlexOS allows you to store your data in the cloud and access it from any device. It offers flexibility, speed, and security while providing a user-friendly experience.</p>
+        <p>FlexOS is a revolutionary cloud-based operating system designed for ultimate speed, security, and flexibility. Access your data from any device, anywhere, at any time.</p>
 
         <div class="features">
             <div class="feature">
                 <h3>Cloud-Based</h3>
-                <p>Store your data and applications in the cloud for easy access from anywhere.</p>
+                <p>Enjoy seamless cloud storage and synchronization for your files and applications.</p>
             </div>
             <div class="feature">
                 <h3>Flexibility</h3>
-                <p>Switch seamlessly between devices, with no hardware requirements.</p>
+                <p>Switch effortlessly between devices without losing your workflow.</p>
             </div>
             <div class="feature">
                 <h3>User-Friendly Interface</h3>
-                <p>An intuitive, sleek design that makes using FlexOS easy and enjoyable.</p>
+                <p>Navigate a sleek, modern interface designed for productivity and ease.</p>
             </div>
         </div>
 
@@ -113,14 +183,13 @@
     </section>
 
     <footer>
-        <p>Special thanks to the NovaOS Solaris Team for their contributions to this project.</p>
+        <p>Special thanks to the NovaOS Solaris Team for making this vision a reality.</p>
     </footer>
 
     <script>
-        // Handle button click event to open the link in a new tab
         document.getElementById('tryButton').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default behavior
-            window.open('https://novaosholder.github.io/FlexOS/', '_blank'); // Open in a new tab
+            event.preventDefault();
+            window.open('https://novaosholder.github.io/FlexOS/', '_blank');
         });
     </script>
 
