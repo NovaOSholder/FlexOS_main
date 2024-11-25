@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexOS - Cloud-Based Operating System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature h3 {
+            color: #34495e;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .button {
+            background-color: #2980b9;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #3498db;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FlexOS - Cloud-Based Operating System</h1>
+        <p>Introducing FlexOS: A fast, secure, and flexible cloud-based experience!</p>
+    </header>
+
+    <section>
+        <h2>About FlexOS</h2>
+        <p>FlexOS allows you to store your data in the cloud and access it from any device. It offers flexibility, speed, and security while providing a user-friendly experience.</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Cloud-Based</h3>
+                <p>Store your data and applications in the cloud for easy access from anywhere.</p>
+            </div>
+            <div class="feature">
+                <h3>Flexibility</h3>
+                <p>Switch seamlessly between devices, with no hardware requirements.</p>
+            </div>
+            <div class="feature">
+                <h3>User-Friendly Interface</h3>
+                <p>An intuitive, sleek design that makes using FlexOS easy and enjoyable.</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="https://novaosholder.github.io/FlexOS/" class="button" id="tryButton">Try FlexOS</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Special thanks to the NovaOS Solaris Team for their contributions to this project.</p>
+    </footer>
+
+    <script>
+        // Handle button click event to open the link in a new tab
+        document.getElementById('tryButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default behavior
+            window.open('https://novaosholder.github.io/FlexOS/', '_blank'); // Open in a new tab
+        });
+    </script>
+
+</body>
+</html>
